@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Handlebars "Hello, World!"</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/handlebars-v3.0.0.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+
+	<p>Using handlebars.js to output a list of names:</p>
+	<script id="template" type="text/x-handlebars-template">
+		<ul>
+			{{#each peeps}}
+			<li>{{firstName}} {{lastName}}</li>
+			{{/each}}
+		</ul>
+	</script>
+
+</body>
+</html>
