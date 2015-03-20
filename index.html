@@ -13,13 +13,23 @@
 </head>
 <body>
 
-	<p>Using handlebars.js to output a list of names:</p>
 	<script id="template" type="text/x-handlebars-template">
+		{{> header}}
+		<p>Using handlebars.js to output a list of names:</p>
 		<ul>
 			{{#each peeps}}
 			<li>{{firstName}} {{lastName}}</li>
 			{{/each}}
 		</ul>
+		{{> footer}}
+	</script>
+
+	<script id="header" type="text/x-handlebars-template">
+		<h1>Handlebars "Hello, World!"</h1>
+	</script>
+	
+	<script id="footer" type="text/x-handlebars-template">
+		<hr>
 	</script>
 
 </body>

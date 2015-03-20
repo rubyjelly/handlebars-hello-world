@@ -1,5 +1,8 @@
 $(document).ready(function() {
-		
+
+	Handlebars.registerPartial("header", $("#header").html());
+	Handlebars.registerPartial("footer", $("#footer").html());
+
 	var namesData = {
 			peeps: [
 				{firstName:"Audrey", lastName:"Hepburn"},
